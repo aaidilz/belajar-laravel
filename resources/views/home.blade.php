@@ -10,14 +10,18 @@
   </head>
   <body>
     <section>
-        <div class="container d-flex flex-column justify-content-center align-items-center" style="height: 75vh;">
-            <img src="images/1.png" width="300">
-            <div class="container mt-3 mx-3">
-                <h1 class="text-center">Welcome to my website!</h1>
-                <p class="text-center">well, the website is actually working :"</p>
-            </div>
-        </div>
-      @yield('Wave')
+      <div class="container d-flex flex-column justify-content-center align-items-center" style="height: 75vh;">
+        <img src="images/1.png" width="300">
+        <div class="container mt-3 mx-3">
+            <h1 class="text-center">Welcome to my website!</h1>
+            <p class="text-center">well, the website is actually working :"</p>
+          </div>
+          <a href="/login" class="btn btn-primary">Try To Login</a>
+      </div>
+      <div class='air air1'></div>
+      <div class='air air2'></div>
+      <div class='air air3'></div>
+      <div class='air air4'></div>
     </section>
   </body>
 </html>
