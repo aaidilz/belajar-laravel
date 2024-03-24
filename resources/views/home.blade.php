@@ -12,9 +12,13 @@
     <section>
       <div class="container d-flex flex-column justify-content-center align-items-center" style="height: 75vh;">
         <img src="images/1.png" width="300">
-        <div class="container mt-3 mx-3">
+        <div class="container mt-3 mx-3 d-flex flex-column align-items-center">
             <h1 class="text-center">Welcome to my website!</h1>
-            <p class="text-center">well, the website is actually working :"</p>
+            <div class="running-text-container mb-3">
+              <marquee behavior="scroll" direction="left" scrollamount="4">
+                This is a simple website that I made using {{ $framework_name }}. I hope you enjoy it!
+              </marquee>
+            </div>
           </div>
           <a href="/login" class="btn btn-primary">Try To Login</a>
       </div>

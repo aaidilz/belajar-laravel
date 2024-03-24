@@ -13,9 +13,8 @@
         <div class="container d-flex flex-column justify-content-center align-items-center" style="height: 75vh;">
             <img src="images/2.png" width="200">
             <h1>LOGIN PLEASE</h1>
-            <h5>Login form may not work. for while :V</h5>
             <div class="container w-25">
-                <form action="#" method="POST" class="d-flex flex-column justify-content-center align-items-center">
+              <form action="#" method="POST" class="d-flex flex-column justify-content-center align-items-center">
                     <div class="mb-3 w-100">
                         <label for="email" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="email" name="email">
@@ -25,6 +24,7 @@
                         <input type="password" class="form-control" id="password" name="password">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
+                    <a href="{{ route('blog.index') }}" class="btn btn-danger">Bypass button here!</a>
                 </form>
             </div>
         </div>

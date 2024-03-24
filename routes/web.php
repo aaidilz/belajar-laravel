@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', [
+        'framework_name' => 'Laravel 10',
+    ]);
 });
-
+Route::get('/blog/main-post', [BlogController::class, 'index'])->name('blog.index');
 Route::view('/login', 'login');
+
